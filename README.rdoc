@@ -6,6 +6,8 @@ This is a sample application for accessing the Desk.com v2 API.
 	for implementing this project. It is written for this purpose and makes
 	the OAuth authentication and API access easy. DRY approach. :)
 
+	This application is deployed on Heroku at https://boiling-river-3963.herokuapp.com
+
 	If I had more free time, there are some things that I would like to have done differently:
 
 	* More automated unit testing.
@@ -34,9 +36,3 @@ Misc
 	* This is/was awesome (hopefully they will revert to older functionality soon): https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk
 
 	* Could implment this https://github.com/pitr/angular-rails-templates for optimization
-
-Personal Notes
-
-	* Review: https://shellycloud.com/blog/2013/10/how-to-integrate-angularjs-with-rails-4
-
-	* Heroku enviroment variables: https://devcenter.heroku.com/articles/config-vars
