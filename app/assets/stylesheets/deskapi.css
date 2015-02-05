@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+.label {
+	border: 1px solid blue;
+	border-radius: 0.5em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	margin: 1px;
+	background-color: lightblue;
+	display: inline-block;
+}
+
+.subject {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.blurb {
+	color: grey;
+}

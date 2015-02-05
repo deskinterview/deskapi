@@ -1,0 +1,42 @@
+== README
+
+This is a sample application for accessing the Desk.com v2 API.
+
+	I decided to use the publicly available salesforce-deskcom-api library
+	for implementing this project. It is written for this purpose and makes
+	the OAuth authentication and API access easy. DRY approach. :)
+
+	If I had more free time, there are some things that I would like to have done differently:
+
+	* More automated unit testing.
+
+	* Display to the user when an error occurs.
+
+	* Instead of using AngularJS the way that I did, I would like to implement
+	  the was that this article desribes: http://start.jcolemorrison.com/setting-up-an-angularjs-and-rails-4-1-project/
+
+	* Make a nicer-looking UI. This one is bare-bones. I really want to try this project: https://material.angularjs.org
+
+	* Implement a responsive UI.
+
+	* Localize the strings.
+
+	* switch to AngularJS services and implement unit tests in the AngularJS code.
+
+	* Testing, testing, testing. I only had time to try on Chrome on OS X, but users seem to also use other browsers and environments. ;)
+
+	* Implement pagination
+
+Misc
+
+	* Turbolinks and AngularJS conflict a bit. There is a work-around, but I just did not use them for this project.
+
+	* This is/was awesome (hopefully they will revert to older functionality soon): https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk
+
+	* Could implment this https://github.com/pitr/angular-rails-templates for optimization
+
+Personal Notes
+
+	* Review: https://shellycloud.com/blog/2013/10/how-to-integrate-angularjs-with-rails-4
+
+	* Heroku enviroment variables: https://devcenter.heroku.com/articles/config-vars

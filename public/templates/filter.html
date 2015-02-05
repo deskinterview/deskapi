@@ -1,0 +1,6 @@
+<h1>Cases</h1>
+<table>
+<tr><th>Status</th><th>Subject</th><th>Labels</th></tr>
+<tr ng-repeat="case in filter._embedded.entries">
+<td><a href="#/templates/case?id={{case.id}}">{{case.status}}</a></td><td><a href="#/templates/case?id={{case.id}}">{{case.subject}}</a></td><td><a href="#/templates/case?id={{case.id}}"><span ng-repeat="label in case.labels" class="label">{{label}}</span></a></td>
+</tr>

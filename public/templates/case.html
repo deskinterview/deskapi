@@ -1,0 +1,45 @@
+<h1>Case {{case.id}}</h1>
+<div class="subject">{{case.subject}}</div>
+<br/>
+<pre>{{case.blurb}}</pre>
+Case Labels: <span ng-repeat="label in case.labels" class="label">{{label}}</span>
+<br><br>
+Available Labels:
+<span class="label" ng-repeat="label in labels">{{label.name}} <span ng-click="addLabelToCase(case.id, label.name)" title='Add label "{{label.name}}" to case'>+</span></span>
+<br>
+<br>
+<button onclick="getElementById('createLabel').style.display='block'">Create Label</button>
+<div style="display: none" id="createLabel">
+<form action="/labels" id="labelForm" method="POST">
+	<input type="hidden" id="authenticity_token" name="authenticity_token">
+	<input type="text" id="name" name="name" placeholder="Name">
+	<br>
+	<input type="text" id="description" name="description" placeholder="Description">
+	<br>
+	<fieldset>
+	<legend>Type(s):</legend>
+		<input type="checkbox" id="case" name="types" value="case">case
+		<br>
+		<input type="checkbox" id="macro" name="types" value="macro">macro
+		<br>
+		<input type="checkbox" id="article" name="types" value="article">article
+	</fieldset>
+	<br>
+	Color:
+	<select id="color" name="color">
+		<option value="default">Default</option>
+		<option value="blue">Blue</option>
+		<option value="white">White</option>
+		<option value="yellow">Yellow</option>
+		<option value="red">Red</option>
+		<option value="orange">Orange</option>
+		<option value="green">Green</option>
+		<option value="black">Black</option>
+		<option value="purple">Purple</option>
+		<option value="brown">Brown</option>
+		<option value="grey">Grey</option>
+		<option value="pink">Pink</option>
+	</select>
+</form>
+<button ng-controller="CaseCtrl" ng-click="createCaseLabel();">Add</button>&nbsp;<button onclick="getElementById('createLabel').style.display='none'; getElementById('labelForm').reset()">Cancel</button>
+</div>
